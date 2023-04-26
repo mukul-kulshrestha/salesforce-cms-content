@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/header %>
+<body class="slds-m-around_small">
+  <% include partials/blockTitle %>
+  <div id="block-container">
+    <fieldset class="groupbox-border">
+      <legend class="groupbox-border">Content Configuration</legend>
+      <% include partials/imageLink %>
+      <% include partials/imageSliders %>
+      <% include partials/imageSettings %>
+    </fieldset>
+    <br>
+    <fieldset class="groupbox-border">
+        <legend class="groupbox-border">Content Selection</legend>  
+        <span style="float:right !important";>
+          <span id="cms_image" class="slds-icon_container slds-icon-utility-announcement" title="Images">
+            <svg id="svg-images" class="slds-icon slds-icon-text-light slds-icon_medium" aria-hidden="true">
+              <use xlink:href="slds/assets/icons/utility-sprite/svg/symbols.svg#image"></use>
+            </svg><br><span class="contentType">IMAGES</span>&nbsp;&nbsp;
+          </span>
+          <span id="cms_document" class="slds-icon_container slds-icon-utility-announcement" title="Documents">
+            <svg id="svg-documents" class="slds-icon slds-icon-text-light slds-icon_medium" aria-hidden="true">
+              <use xlink:href="slds/assets/icons/utility-sprite/svg/symbols.svg#edit_form"></use>
+            </svg><br><span class="contentType">DOCS</span>&nbsp;&nbsp;
+          </span>
+          <span id="news" class="slds-icon_container slds-icon-utility-announcement" title="News">
+            <svg id="svg-news" class="slds-icon slds-icon-text-light slds-icon_medium" aria-hidden="true">
+              <use xlink:href="slds/assets/icons/utility-sprite/svg/symbols.svg#news"></use>
+            </svg><br><span class="contentType">NEWS</span>&nbsp;&nbsp;
+          </span>
+        </span>
+      </fieldset>
+    <div class="slds-grid slds-wrap" style="width:384px" id="cms-images"></div>
+  </div>
+  <script src="sfsdk/blocksdk.js"></script>
+  <script src="javascripts/main.js"></script>
+</body>
+</html>
