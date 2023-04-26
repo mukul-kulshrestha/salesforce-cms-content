@@ -6,13 +6,13 @@ let Html5Entities = require('html-entities');
 
 
 //Environment and process.env values
-var clientID = process.env.clientID || '3MVG9Kip4IKAZQEURQLxNTxad_Di6MhEhmmrr.wADSgoWUs7g4GMDBB_eUKA54y5vEc_0BVdZgyKqBGl_FaF4';
+var clientID = process.env.clientID || '3MVG9LzKxa43zqdIJD2j4I44fU9oJML9_QqQ6_Yp7D5GmDwFJt8JSltEblbyOvKSe37RptAlKWE89j6zsW7.m';
 var limit = process.env.limit || "25"; //page size 25
 var environment = process.env.NODE_ENV || 'development';
-var channelID = process.env.channelID || '0ap3h000000LlA6AAK';
+var channelID = process.env.channelID || '0ap1w0000008OWHAA2';
 var envprivateKey;
-var cmsUSER = process.env.cmsUser || 'cmsuser@cms.demo'; //Salesforce CMS Username 
-var instanceURL = process.env.instanceUrl || 'https://login.salesforce.com';
+var cmsUSER = process.env.cmsUser || 'CMS User'; //Salesforce CMS Username 
+var instanceURL = process.env.instanceUrl || 'https://test.salesforce.com';
 var contentType = 'news';
 
 if(environment === 'development'){
